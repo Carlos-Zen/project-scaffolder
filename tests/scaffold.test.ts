@@ -33,7 +33,7 @@ describe('ProjectScaffolder Core Logic', () => {
 
       const targetPath = path.join(projectDir, file.target)
 
-      expect(targetPath).toBe('/projects/my-app/package.json')
+      expect(targetPath).toBe(path.normalize('/projects/my-app/package.json'))
     })
 
     it('should resolve nested paths', () => {
@@ -42,7 +42,7 @@ describe('ProjectScaffolder Core Logic', () => {
 
       const targetPath = path.join(projectDir, file.target)
 
-      expect(targetPath).toBe('/projects/my-app/src/index.ts')
+      expect(targetPath).toBe(path.normalize('/projects/my-app/src/index.ts'))
     })
   })
 
