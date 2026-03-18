@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "tsx src/index.ts",
-    "build": "tsup src/index.ts --format esm --shebang"
+    "build": "tsup src/index.ts --format esm --shebang",
+    "test": "vitest"
   },
   "dependencies": {
     "commander": "^12.0.0",
@@ -23,7 +24,8 @@
     "@types/node": "^20.11.30",
     "tsup": "^8.0.2",
     "tsx": "^4.7.1",
-    "typescript": "~5.4.3"
+    "typescript": "~5.4.3",
+    "vitest": "^1.4.0"
   },
   "keywords": ["cli", "scaffold", "template", "generator"],
   "license": "MIT"
